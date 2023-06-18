@@ -1,5 +1,4 @@
 #include <sys/wait.h>
-#include <sys/types.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -24,6 +23,10 @@ int (*builtin_func[])(char **)={
   &slsh_help, 
   &slsh_exit, 
 };
+
+int slsh_num_builtins(){
+  return sizeof(builtin_str) / sizeof(char*);
+}
 
 int slsh_cd(char **args) {
   if (args[1] == NULL){
@@ -50,6 +53,9 @@ int slsh_help(char **args){
   return 1;
 }
 
+int slsh_exit(char **args){
+  return 0;
+}
 int slsh_launch(char **args) {
   pid_t pid;
   int status;
