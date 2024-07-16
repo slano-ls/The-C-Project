@@ -85,10 +85,3 @@ I have borrowed some of the code, and lots of ideas, from the
 His code is in the public domain. I think that my code is substantially
 different enough that I can apply a different license to my code.
 
-Unless otherwise noted,
-
- + all source code and scripts are (c) Warren Toomey under
-   the GPL3 license.
- + all non-source code documents (e.g. English documents,
-   image files) are (c) Warren Toomey under the Creative
-   Commons BY-NC-SA 4.0 license.
